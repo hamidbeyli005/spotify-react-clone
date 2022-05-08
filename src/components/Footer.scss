@@ -1,0 +1,133 @@
+$black: #000;
+$white: #fff;
+$green: #1ed760;
+$bgColor: #222326;
+$lightBlack: #919496;
+.footer {
+  section {
+    height: 530px;
+    width: 100%;
+    background: $black;
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      .logo {
+        width: 132px;
+        a {
+          height: 40px;
+          width: 100%;
+          svg {
+            g {
+              path {
+                transition: 300ms all;
+              }
+            }
+          }
+          &:hover {
+            svg {
+              g {
+                path {
+                  fill: $green;
+                }
+              }
+            }
+          }
+        }
+      }
+      ul {
+        margin: 0 54px;
+        li {
+          margin: 25px 0;
+          a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            font-weight: 500;
+            font-size: 15px;
+            &:hover {
+              color: green;
+            }
+          }
+          &:first-child {
+            color: $lightBlack;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+      .icons {
+        margin: 0;
+        margin-left: auto;
+        display: flex;
+        li {
+          margin-left: 14px;
+
+          a {
+            display: block;
+            background: $bgColor;
+            padding: 15px;
+            border-radius: 50%;
+            .icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: 200ms all;
+
+              font-size: 24px;
+            }
+            &:hover {
+              .icon {
+                color: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+    .country {
+      margin-left: auto;
+
+      a {
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        color: $lightBlack;
+        font-size: 12px;
+        transition: 200ms all;
+        margin-bottom: 15px;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        li {
+            color: $lightBlack;
+            font-size: 12px;
+          a {
+            color: $lightBlack;
+            font-size: 12px;
+            text-decoration: none;
+            transition: 200ms color;
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

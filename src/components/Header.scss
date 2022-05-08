@@ -1,0 +1,75 @@
+$black: #000;
+$white: #fff;
+$green: #1ed760;
+
+.container {
+  width: 100%;
+  
+  height: 80px;
+  background: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 132px;
+    margin-top: 5px;
+    a {
+      height: 40px;
+      width: 100%;
+      svg {
+        g {
+          path {
+            transition: 300ms all;
+          }
+        }
+      }
+      &:hover {
+        svg {
+          g {
+            path {
+              fill: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      li {
+        cursor: pointer;
+        a {
+          padding: 28px 17px;
+
+          font-size: 16px;
+          font-weight: 700;
+          color: $white;
+          text-decoration: none;
+          transition: 250ms color;
+          &.active{
+            color: $green;
+        }
+        }
+        &:hover {
+          a {
+            color: $green;
+            
+          }
+        }
+        &:last-child {
+          a {
+            padding-right: 0px;
+          }
+        }
+        .seperator{
+            height: 16px;
+            width: 1px;
+            background: $white;
+            margin: 0 17px;
+
+        }
+      }
+    }
+  }
+}

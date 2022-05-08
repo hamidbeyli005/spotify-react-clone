@@ -1,0 +1,86 @@
+$pink: #993399;
+$black: #000;
+$white: #fff;
+$blue: rgb(41, 65, 171);
+$green: #1ed760;
+
+.spotify_premium {
+  height: 635px;
+  background: $pink;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.header {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 600;
+  color: $white;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.spotify_premium h1 {
+  font-size: 60px;
+  color: $white;
+  margin-bottom: 25px;
+  
+}
+h2 {
+  font-size: 26px;
+  color: $white;
+  margin-bottom: 40px;
+  display: block;
+  font-weight: 500;
+}
+.btn {
+  background: $black;
+  color: rgba($color: $white, $alpha: 1);
+  padding: 14px 32px;
+  border-radius: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  transition: 300ms all;
+  &:hover {
+    transform: scale(1.06);
+  }
+}
+.description {
+  margin-top: 40px;
+  color: $white;
+  font-size: 12px;
+  a {
+    color: $white;
+  }
+}
+.image {
+  position: absolute;
+  top: 100px;
+  right: 8%;
+  width: 400px;
+  height: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.spotify_free {
+  height: 600px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $blue;
+  background-image: url("https://content-tooling.spotifycdn.com/images/b236bf87-bfd5-4bcb-b51a-77881073039c_lie_circles.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  .btn {
+    background-color: $green;
+    color: $blue;
+  }
+  >p,h1,h2{
+      color: $green;
+  }
+}
